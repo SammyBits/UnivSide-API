@@ -16,7 +16,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "bun run build && bun build/index.js"
+    "start": "bun build/index.js"
   },
   "dependencies": {
     "chalk": "^5.3.0",
