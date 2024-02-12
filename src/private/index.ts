@@ -14,12 +14,12 @@ export const openai = new OpenAI({
 
 import cors from "cors";
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(chatRouter);
 
 app.listen(port, () => {
-  console.log(chalk.green("Server is running on port 3000"));
+  console.log(chalk.green(`Server is running on port ${port}`));
 });
